@@ -7,7 +7,7 @@ if (_userAgent.match(/Android/i)) {
   document.getElementById("name").textContent =
     "Device OS: " + _userAgent.split("(")[1].split(";")[1].split(" ")[1]
   document.getElementById("info").textContent =
-    "Device OS info: " + _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
+    _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
   document.getElementById("type").textContent = "Device type: Mobile";
 
 } else if (_userAgent.match(/webOS/i)) {
@@ -15,7 +15,7 @@ if (_userAgent.match(/Android/i)) {
   document.getElementById("name").textContent =
     "Device OS: " + _userAgent.split("(")[1].split(";")[1].split(" ")[1];
   document.getElementById("info").textContent =
-    "Device OS info: " + _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
+    _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
   document.getElementById("type").textContent = "Device type: Mobile";
 
 } else if (_userAgent.match(/iPhone/i)) {
@@ -31,7 +31,7 @@ if (_userAgent.match(/Android/i)) {
   document.getElementById("name").textContent =
     "Device OS: " + _userAgent.split("(")[1].split(";")[0];
   document.getElementById("info").textContent =
-    "Device OS info: " + _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
+    _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
   document.getElementById("type").textContent = "Device type: Mobile";
 
 } else if (_userAgent.match(/iPod/i)) {
@@ -39,7 +39,7 @@ if (_userAgent.match(/Android/i)) {
   document.getElementById("name").textContent =
     "Device OS: " + _userAgent.split("(")[1].split(";")[0];
   document.getElementById("info").textContent =
-    "Device OS info: " + _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
+    _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
   document.getElementById("type").textContent = "Device type: Mobile";
 
 } else if (_userAgent.match(/BlackBerry/i)) {
@@ -47,7 +47,7 @@ if (_userAgent.match(/Android/i)) {
   document.getElementById("name").textContent =
     "Device OS: " + _userAgent.split("(")[1].split(";")[1].split(" ")[1];
   document.getElementById("info").textContent =
-    "Device OS info: " + _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
+    _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
   document.getElementById("type").textContent = "Device type: Mobile";
 
 } else if (_userAgent.match(/Windows Phone/i)) {
@@ -55,7 +55,7 @@ if (_userAgent.match(/Android/i)) {
   document.getElementById("name").textContent =
     "Device OS: " + _userAgent.split("(")[1].split(";")[1].split(" ")[1];
   document.getElementById("info").textContent =
-    "Device OS info: " + _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
+    _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")"));
   document.getElementById("type").textContent = "Device type: Mobile";
   
 } else {
@@ -64,6 +64,6 @@ if (_userAgent.match(/Android/i)) {
   document.getElementById("name").textContent =
     "Device OS: " + _userAgent.split("(")[1].split(";")[1].split(" ")[1];
   document.getElementById("info").textContent =
-    "Device OS info: " + _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")")) //split("(")[1].split(";")[1].split(")")[0];
+    _userAgent.slice(_userAgent.indexOf("(") + 1, _userAgent.indexOf(")")) //split("(")[1].split(";")[1].split(")")[0];
   document.getElementById("type").textContent = "Device type: Desktop";
 }
